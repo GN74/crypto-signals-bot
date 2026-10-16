@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ccxt pandas pandas_ta requests
+          pip install ccxt pandas requests pandas-ta
 
       - name: Run the bot
         env:
