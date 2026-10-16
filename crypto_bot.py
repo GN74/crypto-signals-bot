@@ -5,8 +5,10 @@ import requests
 from datetime import datetime
 
 # === ВСТАВЬ СЮДА СВОИ ДАННЫЕ ===
-TELEGRAM_BOT_TOKEN = '8817909083:AAFv5Fr2o121Pepgs35ehHHhmh6h03mcoqQ'
-TELEGRAM_CHAT_ID = '778908720'
+import os
+
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
 
 # Список монет для проверки
 SYMBOLS = ['SOL/USDT', 'SEI/USDT', 'NEAR/USDT', 'SUI/USDT', 'AVAX/USDT',
